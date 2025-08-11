@@ -64,24 +64,36 @@ const Hero = () => {
             Full‑Stack Developer crafting beautiful, functional, and user‑centered digital experiences
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4">
-            <a href="#projects" className="group flex items-center justify-center bg-purple-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-purple-700 hover:shadow-[0_0_12px_rgba(168,85,247,0.5)] hover:scale-105 active:scale-95 transition-transform duration-300 w-48">
-              View My Work
-              <FiArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
+<div className="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-3 sm:gap-4 w-full max-w-sm sm:max-w-none mx-auto sm:mx-0">
+  <a 
+    href="#projects" 
+    className="group flex items-center justify-center bg-purple-600 text-white 
+               px-5 sm:px-6 py-3 rounded-md font-semibold 
+               hover:bg-purple-700 hover:shadow-[0_0_12px_rgba(168,85,247,0.5)] 
+               hover:scale-105 active:scale-95 transition-transform duration-300 
+               w-full sm:w-48 text-sm sm:text-base"
+  >
+    View My Work
+    <FiArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+  </a>
 
-            <a
-              href="/cv.pdf"
-              download
-              aria-label="Download my CV"
-              className="group flex items-center justify-center text-gray-300 px-6 py-3 rounded-md font-semibold
-                         hover:bg-white/10 hover:text-white motion-safe:hover:scale-[1.03] active:scale-95 transition-transform duration-300 w-48
-                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black/40"
-            >
-              <FiDownload className="mr-2 transition-transform duration-300 group-hover:-translate-y-0.5" aria-hidden="true" />
-              Download CV
-            </a>
-          </div>
+  <a
+    href="/cv.pdf"
+    download
+    aria-label="Download my CV"
+    className="group flex items-center justify-center text-gray-300 
+               px-5 sm:px-6 py-3 rounded-md font-semibold
+               hover:bg-white/10 hover:text-white motion-safe:hover:scale-[1.03] 
+               active:scale-95 transition-transform duration-300 
+               w-full sm:w-48 text-sm sm:text-base
+               focus-visible:outline-none focus-visible:ring-2 
+               focus-visible:ring-purple-500/70 focus-visible:ring-offset-2 
+               focus-visible:ring-offset-black/40"
+  >
+    <FiDownload className="mr-2 transition-transform duration-300 group-hover:-translate-y-0.5" aria-hidden="true" />
+    Download CV
+  </a>
+</div>
         </div>
 
         {/* Right: Headshot */}
@@ -92,7 +104,7 @@ const Hero = () => {
             loading="eager"
             decoding="async"
             draggable="false"
-            className="w-64 h-64 md:w-80 md:h-80 xl:w-[28rem] xl:h-[28rem] object-cover rounded-full
+            className="w-55 h-55 md:w-80 md:h-80 xl:w-[28rem] xl:h-[28rem] object-cover rounded-full
                        border border-white/10 ring-1 ring-white/10 shadow-2xl shadow-black/60"
           />
         </div>
@@ -119,7 +131,7 @@ const Hero = () => {
           </div>
         </div> */}
         <div>
-        <div >
+        <div className='hidden sm:block' >
             <div className="w-7 h-12 border-2 border-gray-400 rounded-full flex justify-center items-start p-1">
                 <div className="w-1 h-3 bg-gray-400 rounded-full animate-bounce"></div>
             </div>
